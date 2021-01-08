@@ -170,22 +170,6 @@ def probe():
 	print("######Analysis Graphs######")
 	plt_analysis_graphs()
 
-
-
-def normalise_scale_outliers():
-	global dataFrame;
-	# dataFrame.drop(dataFrame.columns.difference(['CLM_AMT', 'CLAIM_FLAG', 'MVR_PTS', 'CLM_FREQ', 'PARENT1', 'MSTATUS',
-	#                                             'OLDCLAIM','REVOKED']), 1, inplace = True)
-	dataFrame = pd.get_dummies(dataFrame, drop_first=True)
-
-	#scaler = StandardScaler()
-	#dataFrame[['CLAIM_FLAG', 'PARENT1_Yes', 'MSTATUS_z_No', 'REVOKED_Yes']] = scaler.fit_transform(dataFrame[['CLAIM_FLAG', 'PARENT1_Yes', 'MSTATUS_z_No', 'REVOKED_Yes']])
-	# # ## TOBE SCALLED
-
-	pass
-
-
-
 def model_apply():
 	global dataFrame
     #	dataFrame = dataFrame[dataFrame.ISLOST != 0]
