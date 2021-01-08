@@ -19,12 +19,6 @@ dataFrame = pd.read_csv('car_insurance_claim_2.csv', delimiter = ',')
 sns.set(style = 'white', context = 'notebook', palette = 'deep')
 
 
-def f(row):
-    if row['CLM_AMT'] > 0 :
-        val = 1
-    else:
-        val = 0.
-    return val
 
 #  ####################Data Cleanup###############################
 def cleanup_data(data_frame):
